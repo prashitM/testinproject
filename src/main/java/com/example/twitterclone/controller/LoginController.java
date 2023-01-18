@@ -92,6 +92,7 @@ public String lp(@Validated Register register , Model model){
 
       for(int i=0;i<lRegisters.size();i++)
       {
+        // check the user name
             if(n.equals(lRegisters.get(i).getName()))
             {
                 
