@@ -1,0 +1,51 @@
+<html>
+<body> 
+
+    <style>
+#main{
+    width: 400px;
+    height: 200px;
+    background-color: aqua;
+    transform: translate(180%,160%);
+    box-shadow: 1px 1px 20px 3px;
+    border-radius: 10px;
+}
+
+form{
+    padding: 20px;
+}
+
+input{
+    border-radius: 5px;
+    padding: 2px;
+    
+}
+
+#button:hover{
+
+background-color: yellowgreen;
+
+}
+
+
+    </style>
+
+    <div id="main">
+        <form action="#" th:action="@{/adduser}" th:object="${register}" method="post">
+
+        <label for="name">Name</label>
+        <input type="text" th:field="*{name}" id="name" placeholder="Name"> <br><br>
+
+        <label for="email">Email</label>
+        <input type="text" th:field="*{email_id}" id="email" placeholder="Email"> <br><br>
+
+        <label for="mobile number">password</label>
+        <input type="text" th:field="*{password}" id="number" placeholder="mobile number"> <br><br>
+
+        <input type="submit" id ="button" value="Add User"> 
+    </form>
+    </div>
+
+
+</body>
+</html>

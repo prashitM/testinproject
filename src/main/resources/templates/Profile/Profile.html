@@ -1,0 +1,527 @@
+<html>
+    <head>
+        <style>
+
+#main{
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
+}
+
+#left{
+    height: 800px;
+    width: 470px;
+    border: 1px solid black;   
+}
+
+#center{
+    height: 950px;
+    width: 900px;
+    border: 1px solid black;
+    transform: translate(55%,-84.4%); 
+}
+#Profile{
+    height: 550px;
+    width: 900px;
+    border: 1px solid blueviolet;
+    transform: translate(0%,0%); 
+}
+#bgprofilephoto{
+    height: 270px;
+    width: 900px;
+    border: 1px solid red;
+    transform: translate(0%,0%); 
+}
+
+#right{
+    height: 800px;
+    width: 450px;
+    border: 1px solid greenyellow;  
+    transform: translate(315%,-219%); 
+}
+
+#tweetimg{
+    transform: translate(110px,0px);
+    padding: 2px;
+}
+
+#homebutton{
+    height: 50px;
+    width: 300px;
+ 
+    border-radius: 100px;
+    transform: translate(100px,0px);
+}
+
+
+#homeimg{
+    height: 50px;
+    width: 30px;
+    transform: translate(20px,0px);
+}
+
+#Hometxt{
+    height: 500px;
+    width: 300px;
+    transform: translate(60px,-50px);
+
+}
+
+#Explorebutton{
+    height: 50px;
+    width: 300px;
+   
+    border-radius: 100px;
+    transform: translate(100px,20px);
+}
+
+#starimg{
+    height: 50px;
+    width: 30px;
+    transform: translate(20px,0px);
+}
+
+#exploretxt{
+    height: 500px;
+    width: 300px;
+    transform: translate(60px,-50px);
+}
+
+#Notificationbutton{
+    height: 50px;
+    width: 300px;
+ 
+    border-radius: 100px;
+    transform: translate(100px,40px);    
+}
+#bellimg{
+    height: 50px;
+    width: 30px;
+    transform: translate(20px,0px);
+}
+#notificationtxt{
+    height: 500px;
+    width: 300px;
+    transform: translate(60px,-50px);
+}
+
+#Messagesbutton{
+    height: 50px;
+    width: 300px;
+ 
+    border-radius: 100px;
+    transform: translate(100px,60px); 
+}
+#messageimg{
+    height: 50px;
+    width: 30px;
+    transform: translate(20px,0px);
+}
+#messagetxt{
+    height: 500px;
+    width: 300px;
+    transform: translate(60px,-50px); 
+}
+
+#Bookmarkbutton{
+    height: 50px;
+    width: 300px;
+   
+    border-radius: 100px;
+    transform: translate(100px,80px); 
+}
+#bookmarkimg{
+    height: 50px;
+    width: 30px;
+    transform: translate(20px,0px);
+}
+#bookmarktxt{
+    height: 500px;
+    width: 300px;
+    transform: translate(60px,-50px);    
+}
+
+#Listbutton{
+    height: 50px;
+    width: 300px;
+   
+    border-radius: 100px;
+    transform: translate(100px,100px); 
+}
+#listimg{
+    height: 50px;
+    width: 30px;
+    transform: translate(20px,0px);  
+}
+#listtxt{
+    height: 500px;
+    width: 300px;
+    transform: translate(60px,-50px);   
+}
+
+#Profilebutton{
+    height: 50px;
+    width: 300px;
+   
+    border-radius: 100px;
+    transform: translate(100px,120px); 
+}
+#userimg{
+    height: 50px;
+    width: 30px;
+    transform: translate(20px,0px); 
+}
+#usertxt{
+    height: 500px;
+    width: 300px;
+    transform: translate(60px,-50px);  
+}
+
+#Morebutton{
+    height: 50px;
+    width: 300px;
+  
+    border-radius: 100px;
+    transform: translate(100px,140px);
+}
+#moreimg{
+    height: 50px;
+    width: 30px;
+    transform: translate(20px,0px); 
+}
+#moretxt{
+    height: 500px;
+    width: 300px;
+    transform: translate(60px,-50px);   
+}
+
+#TweetButton{
+    height: 50px;
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 100px;
+    transform: translate(100px,160px);
+    background-color: rgb(29, 155, 240);
+    text-decoration: white;
+}
+
+ /* CENTER part starts here  */
+ #userphoto{
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    transform: translate(30px,120px);
+    border-radius: 50%;
+ }
+
+ #uploadbtn{
+    display: inline-block;
+    height: 30px;
+    width: 100px;
+    transform: translate(-70px,100px);
+    overflow: hidden;
+ }
+
+ #bgimage{
+    display: none;
+ }
+
+ #usern{
+    transform: translate(18px,100px);
+    font-style: italics;
+ }
+
+ #usernameu{
+    transform: translate(10px,90px);
+    text-decoration: gray;
+    color: grey;
+ }
+
+ #backbtn{
+    height: 50px;
+    width: 100px;
+ }
+ #backbtnimg{
+    height: 30px;
+    width: 30px;
+    transform: translate(10px,10px);
+ }
+ #backusern{
+    height: 20px;
+    width: 100px;
+    transform: translate(50px,-30px);
+ }
+
+ #coverphoto{
+    height: 180px;
+    width: 899px;
+    border: solid 1px green ;
+    transform: translate(0px,-190px);
+    background-color: grey;
+    border-radius: solid 1px black;
+ }
+
+ #editprofbtn{
+    height: 40px;
+    width: 120px;
+    transform: translate(700px,0px);
+    border-radius: 100px;
+    background-color: white;
+ }
+
+ #lowerpart{
+    height: 100px;
+    width: 900px;
+    border: solid 1px orange;
+ }
+ #calendarimg{
+    height: 30px;
+    width: 30px;
+    transform: translate(10px,10px);
+ }
+ #Jdate{
+    transform: translate(50px,-30px);
+ }
+ #following{
+    height: 30px;
+    width: 30px;
+    transform: translate(20px,-10px);
+ }
+ #followers{
+    height: 30px;
+    width: 30px;
+    transform: translate(120px,-56px);
+ }
+ #coverphoto{
+    transform: translate(0px,50px);
+ }
+
+/* RIGHT part starts here */
+
+#search{
+    transform: translate(0px,0px);
+}
+
+#SearchTab{
+background-color:rgb(234, 234, 234);
+height: 50px;
+width: 400px;
+border: 1px solid grey;
+border-radius: 100px;
+transform: translate(20px,0px);
+text-align: center;
+}
+#searchimg{
+    height: 50px;
+    width: 30px;
+    transform: translate(-350px,20px);
+}
+
+#trendbox{
+    height: 600px;
+    width: 400px;
+    border: 1px solid grey;
+    border-radius: 50px;
+    transform: translate(30px,30px);
+    background-color: rgb(234, 234, 234);
+}
+#righttext{
+    transform: translate(20px,0px);
+}
+#trend1{
+    height: 80px;
+    width: 400px;
+    border: 1px solidrgb(234, 234, 234);
+}
+#trend1text{
+    height: 20px;
+    width: 20px;
+    transform: translate(20px,2px);
+}
+#trend1tweet{
+    height: 10px;
+    width: 10px;
+    transform: translate(20px,-5px);
+    color: grey;
+ 
+}
+#trendingin{
+    height: 10px;
+    width: 150px;
+    transform: translate(20px,-85px);
+    color: grey;
+}
+
+#trend2{
+    height: 80px;
+    width: 400px;
+    border: 1px solid rgb(234, 234, 234);
+}
+#rightmore{
+    height: 50px;
+    width: 30px;
+    transform: translate(350px,-100px);
+}
+#trend3{
+    height: 80px;
+    width: 400px;
+    border: 1px solid rgb(234, 234, 234);
+}
+#trend4{
+    height: 80px;
+    width: 400px;
+    border: 1px solid rgb(234, 234, 234);
+}
+#trend5{
+    height: 80px;
+    width: 400px;
+    border: 1px solid rgb(234, 234, 234);
+}
+#trend6{
+    height: 80px;
+    width: 400px;
+    border: 1px solid rgb(234, 234, 234);
+}
+        </style>
+    </head>
+    <body>
+<div id="main">
+
+    <!--LEFT part starts here  -->
+    <div id="left">
+
+<div id="tweetlogo">
+    <img src="twitterlogo.svg" id="tweetimg">
+</div>
+
+<div id="homebutton">
+<img src="home.svg" id="homeimg">
+<p id="Hometxt">Home</p>
+</div>
+
+<div id="Explorebutton">
+<img src="star.svg" id="starimg">
+<p id="exploretxt">Explore</p>
+</div>
+
+<div id="Notificationbutton">
+<img src="bell.svg" id="bellimg">
+<p id="notificationtxt">Notification</p>
+</div>
+
+<div id="Messagesbutton">
+<img src="envelope.svg" id="messageimg">
+<p id="messagetxt">Message</p>
+</div>
+
+<div id="Bookmarkbutton">
+<img src="bookmark.svg" id="bookmarkimg">
+<p id="bookmarktxt">Bookmark</p>
+</div>
+
+<div id="Listbutton">
+<img src="list.svg" id="listimg">
+<p id="listtxt">List</p>
+</div>
+
+<div id="Profilebutton">
+<img src="user.svg" id="userimg">
+<p id="usertxt">User</p>
+</div>
+
+<div id="Morebutton">
+<img src="menu-dots.svg" id="moreimg">
+<p id="moretxt">More</p>
+</div>
+
+<button id="TweetButton">Tweet</button>
+
+    </div>
+<!-- CENTER part starts here -->
+    <div id="center">
+
+ <div id="Profile">
+    <div id="backbtn">
+        <img src="icons8-back-arrow-26.png" id="backbtnimg">
+        <p id="backusern">User demo</p>
+    </div>
+
+
+    <div id="bgprofilephoto">
+
+        <div id="coverphoto"></div>
+    </div>
+    <div id="lowerpart">
+        <img src="icons8-calendar-24.png" id="calendarimg">
+        <p id="Jdate">Joined December 2022</p>
+        <p id="following">Following</p>
+        <p id="followers">Followers</p>
+    </div>
+ </div>
+
+
+    </div>
+
+    <!-- RIGHT part starts here -->
+
+    <div id="right">
+<div id="search">
+    <input type="search" id="SearchTab" placeholder="Search Twitter">
+    <img src="search.svg" id="searchimg">
+</div>
+
+<div id="trendbox">
+<h2 id="righttext">What's Happening?</h2>
+
+<div id="trend1">
+<h2 id="trend1text">#india</h2>
+<p id="trend1tweet">5MTweets</p>
+<p id="trendingin">Trending in india</p>
+<img src="menu-dots.svg" id="rightmore">
+</div>
+
+<div id="trend2">
+    <h2 id="trend1text">#india</h2>
+    <p id="trend1tweet">5MTweets</p>
+    <p id="trendingin">Trending in india</p>
+    <img src="menu-dots.svg" id="rightmore">
+</div>
+
+<div id="trend3">
+    <h2 id="trend1text">#india</h2>
+    <p id="trend1tweet">5MTweets</p>
+    <p id="trendingin">Trending in india</p>
+    <img src="menu-dots.svg" id="rightmore">
+</div>
+
+<div id="trend4">
+    <h2 id="trend1text">#india</h2>
+    <p id="trend1tweet">5MTweets</p>
+    <p id="trendingin">Trending in india</p>
+    <img src="menu-dots.svg" id="rightmore">
+</div>
+
+<div id="trend5">
+    <h2 id="trend1text">#india</h2>
+    <p id="trend1tweet">5MTweets</p>
+    <p id="trendingin">Trending in india</p>
+    <img src="menu-dots.svg" id="rightmore">
+</div>
+
+<div id="trend6">
+    <h2 id="trend1text">#india</h2>
+    <p id="trend1tweet">5MTweets</p>
+    <p id="trendingin">Trending in india</p>
+    <img src="menu-dots.svg" id="rightmore">
+</div>
+
+
+</div>
+    </div>
+
+</div>
+
+
+
+    </body>
+</html>
