@@ -50,7 +50,7 @@ public String logins(Login login ,Model model)
  * The data is stored in 'login' variable which is used alongside Model
  */
 @PostMapping("/logincontroller")
-public String login_page(@Validated Login login , Model model){
+public String login_page(@Validated Register register,Login login , Model model){
     
     String w= login.getEmail_id(); 
     String m=login.getPassword();
@@ -74,19 +74,19 @@ public String login_page(@Validated Login login , Model model){
 
 
 
-    return "Registration";
+      return "Registration";
  }
 
 @RequestMapping("/Loginpage")
-public String lp(@Validated Register register , Model model){
+public String lp(@Validated Login login, Register register , Model model){
   return "LoginMain";
 }
 
  @PostMapping("/Loginpg")
-  public String loginconnector(@Validated  Register register , Model model){
+  public String loginconnector(@Validated  Login login,Register register , Model model){
     
     String n=register.getName();
-    this.userRepository.save(register);
+    // this.userRepository.save(register);
     
     lRegisters.addAll((Collection<? extends Register>) userRepository.findAll());
 
@@ -99,13 +99,11 @@ public String lp(@Validated Register register , Model model){
               return "Homepage";
          
             }
-            // else{
-            //   return "redirect:/Registration";
-            // }
+            
          
 
       }
-    return "Registration";
+    return  "LoginMain";
 
   }
  
