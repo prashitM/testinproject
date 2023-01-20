@@ -1,432 +1,449 @@
 <html>
-    <head>
-        <style>
 
-#main{
-    height: 100%;
-    width: 100%;
-    border: 1px solid red;
-}
+<head>
+    <style>
+        #main {
+            height: 100%;
+            width: 100%;
+            border: 1px solid red;
+        }
+        
+        #left {
+            height: 800px;
+            width: 470px;
+            border: 1px solid black;
+        }
+        
+        #center {
+            height: 250px;
+            width: 900px;
+            border: 1px solid black;
+            transform: translate(55%, -319%);
+        }
+        
+        #right {
+            height: 800px;
+            width: 450px;
+            border: 1px solid greenyellow;
+            transform: translate(315%, -131%);
+        }
+        
+        #tweetimg {
+            transform: translate(110px, 0px);
+            padding: 2px;
+        }
+        
+        #homebutton {
+            height: 50px;
+            width: 300px;
+            border-radius: 100px;
+            transform: translate(100px, 0px);
+        }
+        
+        #homeimg {
+            height: 50px;
+            width: 30px;
+            transform: translate(20px, 0px);
+        }
+        
+        #Hometxt {
+            height: 500px;
+            width: 300px;
+            transform: translate(60px, -50px);
+        }
+        
+        #Explorebutton {
+            height: 50px;
+            width: 300px;
+            border-radius: 100px;
+            transform: translate(100px, 20px);
+        }
+        
+        #starimg {
+            height: 50px;
+            width: 30px;
+            transform: translate(20px, 0px);
+        }
+        
+        #exploretxt {
+            height: 500px;
+            width: 300px;
+            transform: translate(60px, -50px);
+        }
+        
+        #Notificationbutton {
+            height: 50px;
+            width: 300px;
+            border-radius: 100px;
+            transform: translate(100px, 40px);
+        }
+        
+        #bellimg {
+            height: 50px;
+            width: 30px;
+            transform: translate(20px, 0px);
+        }
+        
+        #notificationtxt {
+            height: 500px;
+            width: 300px;
+            transform: translate(60px, -50px);
+        }
+        
+        #Messagesbutton {
+            height: 50px;
+            width: 300px;
+            border-radius: 100px;
+            transform: translate(100px, 60px);
+        }
+        
+        #messageimg {
+            height: 50px;
+            width: 30px;
+            transform: translate(20px, 0px);
+        }
+        
+        #messagetxt {
+            height: 500px;
+            width: 300px;
+            transform: translate(60px, -50px);
+        }
+        
+        #Bookmarkbutton {
+            height: 50px;
+            width: 300px;
+            border-radius: 100px;
+            transform: translate(100px, 80px);
+        }
+        
+        #bookmarkimg {
+            height: 50px;
+            width: 30px;
+            transform: translate(20px, 0px);
+        }
+        
+        #bookmarktxt {
+            height: 500px;
+            width: 300px;
+            transform: translate(60px, -50px);
+        }
+        
+        #Listbutton {
+            height: 50px;
+            width: 300px;
+            border-radius: 100px;
+            transform: translate(100px, 100px);
+        }
+        
+        #listimg {
+            height: 50px;
+            width: 30px;
+            transform: translate(20px, 0px);
+        }
+        
+        #listtxt {
+            height: 500px;
+            width: 300px;
+            transform: translate(60px, -50px);
+        }
+        
+        #Profilebutton {
+            height: 50px;
+            width: 300px;
+            border-radius: 100px;
+            transform: translate(100px, 120px);
+        }
+        
+        #userimg {
+            height: 50px;
+            width: 30px;
+            transform: translate(20px, 0px);
+        }
+        
+        #usertxt {
+            height: 500px;
+            width: 300px;
+            transform: translate(60px, -50px);
+        }
+        
+        #Morebutton {
+            height: 50px;
+            width: 300px;
+            border-radius: 100px;
+            transform: translate(100px, 140px);
+        }
+        
+        #moreimg {
+            height: 50px;
+            width: 30px;
+            transform: translate(20px, 0px);
+        }
+        
+        #moretxt {
+            height: 500px;
+            width: 300px;
+            transform: translate(60px, -50px);
+        }
+        
+        #TweetButton {
+            height: 50px;
+            width: 200px;
+            border: 1px solid white;
+            border-radius: 100px;
+            transform: translate(100px, 160px);
+            background-color: rgb(29, 155, 240);
+            text-decoration: white;
+        }
+        /* CENTER part starts here  */
+        
+        #centerhometxt {
+            height: 20px;
+            width: 20px;
+            transform: translate(20px, 10px);
+        }
+        
+        #centerprofileimg {
+            height: 50px;
+            width: 30px;
+            transform: translate(30px, 20px);
+        }
+        
+        #centertextbox {
+            height: 50px;
+            width: 500px;
+            transform: translate(50px, 0px);
+            font-size: large;
+        }
+        
+        #centertweetbutton {
+            height: 50px;
+            width: 100px;
+            border: 1px solid white;
+            border-radius: 100px;
+            transform: translate(150px, 100px);
+            background-color: rgb(29, 155, 240);
+            text-decoration: white;
+        }
+        /* RIGHT part starts here */
+        
+        #search {
+            transform: translate(0px, 0px);
+        }
+        
+        #SearchTab {
+            height: 50px;
+            width: 400px;
+            border: 1px solid grey;
+            border-radius: 100px;
+            transform: translate(20px, 0px);
+            text-align: center;
+        }
+        
+        #searchimg {
+            height: 50px;
+            width: 30px;
+            transform: translate(-350px, 20px);
+        }
+        
+        #trendbox {
+            height: 600px;
+            width: 400px;
+            border: 1px solid grey;
+            border-radius: 50px;
+            transform: translate(30px, 30px);
+        }
+        
+        #righttext {
+            transform: translate(20px, 0px);
+        }
+        
+        #trend1 {
+            height: 80px;
+            width: 400px;
+            border: 1px solid black;
+        }
+        
+        #trend1text {
+            height: 20px;
+            width: 20px;
+            transform: translate(20px, 2px);
+        }
+        
+        #trend1tweet {
+            height: 10px;
+            width: 10px;
+            transform: translate(20px, -5px);
+        }
+        
+        #trendingin {
+            height: 10px;
+            width: 150px;
+            transform: translate(20px, -85px);
+        }
+        
+        #trend2 {
+            height: 80px;
+            width: 400px;
+            border: 1px solid black;
+        }
+        
+        #rightmore {
+            height: 50px;
+            width: 30px;
+            transform: translate(350px, -100px);
+        }
+        
+        #trend3 {
+            height: 80px;
+            width: 400px;
+            border: 1px solid black;
+        }
+        
+        #trend4 {
+            height: 80px;
+            width: 400px;
+            border: 1px solid black;
+        }
+        
+        #trend5 {
+            height: 80px;
+            width: 400px;
+            border: 1px solid black;
+        }
+        
+        #trend6 {
+            height: 80px;
+            width: 400px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
 
-#left{
-    height: 800px;
-    width: 470px;
-    border: 1px solid black;   
-}
+<body>
+    <div id="main">
 
-#center{
-    height: 250px;
-    width: 900px;
-    border: 1px solid black;
-    transform: translate(55%,-319%); 
-}
+        <!--LEFT part starts here  -->
+        <div id="left">
 
-#right{
-    height: 800px;
-    width: 450px;
-    border: 1px solid greenyellow;  
-    transform: translate(315%,-131%); 
-}
+            <div id="tweetlogo">
+                <img src="twitterlogo.svg" id="tweetimg">
+            </div>
 
-#tweetimg{
-    transform: translate(110px,0px);
-    padding: 2px;
-}
+            <div id="homebutton">
+                <img src="home.svg" id="homeimg">
+                <p id="Hometxt">Home</p>
+            </div>
 
-#homebutton{
-    height: 50px;
-    width: 300px;
- 
-    border-radius: 100px;
-    transform: translate(100px,0px);
-}
+            <div id="Explorebutton">
+                <img src="star.svg" id="starimg">
+                <p id="exploretxt">Explore</p>
+            </div>
 
-#homeimg{
-    height: 50px;
-    width: 30px;
-    transform: translate(20px,0px);
-}
+            <div id="Notificationbutton">
+                <img src="bell.svg" id="bellimg">
+                <p id="notificationtxt">Notification</p>
+            </div>
 
-#Hometxt{
-    height: 500px;
-    width: 300px;
-    transform: translate(60px,-50px);
+            <div id="Messagesbutton">
+                <img src="envelope.svg" id="messageimg">
+                <p id="messagetxt">Message</p>
+            </div>
 
-}
+            <div id="Bookmarkbutton">
+                <img src="bookmark.svg" id="bookmarkimg">
+                <p id="bookmarktxt">Bookmark</p>
+            </div>
 
-#Explorebutton{
-    height: 50px;
-    width: 300px;
-   
-    border-radius: 100px;
-    transform: translate(100px,20px);
-}
+            <div id="Listbutton">
+                <img src="list.svg" id="listimg">
+                <p id="listtxt">List</p>
+            </div>
 
-#starimg{
-    height: 50px;
-    width: 30px;
-    transform: translate(20px,0px);
-}
+            <div id="Profilebutton">
+                <img src="user.svg" id="userimg">
+                <p id="usertxt">User</p>
+            </div>
 
-#exploretxt{
-    height: 500px;
-    width: 300px;
-    transform: translate(60px,-50px);
-}
+            <div id="Morebutton">
+                <img src="menu-dots.svg" id="moreimg">
+                <p id="moretxt">More</p>
+            </div>
 
-#Notificationbutton{
-    height: 50px;
-    width: 300px;
- 
-    border-radius: 100px;
-    transform: translate(100px,40px);    
-}
-#bellimg{
-    height: 50px;
-    width: 30px;
-    transform: translate(20px,0px);
-}
-#notificationtxt{
-    height: 500px;
-    width: 300px;
-    transform: translate(60px,-50px);
-}
+            <button id="TweetButton">Tweet</button>
 
-#Messagesbutton{
-    height: 50px;
-    width: 300px;
- 
-    border-radius: 100px;
-    transform: translate(100px,60px); 
-}
-#messageimg{
-    height: 50px;
-    width: 30px;
-    transform: translate(20px,0px);
-}
-#messagetxt{
-    height: 500px;
-    width: 300px;
-    transform: translate(60px,-50px); 
-}
+        </div>
+        <!-- CENTER part starts here -->
+        <div id="center">
+            <div>
+                <h2 id="centerhometxt">Home</h2>
 
-#Bookmarkbutton{
-    height: 50px;
-    width: 300px;
-   
-    border-radius: 100px;
-    transform: translate(100px,80px); 
-}
-#bookmarkimg{
-    height: 50px;
-    width: 30px;
-    transform: translate(20px,0px);
-}
-#bookmarktxt{
-    height: 500px;
-    width: 300px;
-    transform: translate(60px,-50px);    
-}
+            </div>
+            <img src="user.svg" id="centerprofileimg">
+            <input type="text" id="centertextbox" placeholder="What's Happening?">
+            <button id="centertweetbutton">Tweet</button>
+        </div>
 
-#Listbutton{
-    height: 50px;
-    width: 300px;
-   
-    border-radius: 100px;
-    transform: translate(100px,100px); 
-}
-#listimg{
-    height: 50px;
-    width: 30px;
-    transform: translate(20px,0px);  
-}
-#listtxt{
-    height: 500px;
-    width: 300px;
-    transform: translate(60px,-50px);   
-}
+        <!-- RIGHT part starts here -->
 
-#Profilebutton{
-    height: 50px;
-    width: 300px;
-   
-    border-radius: 100px;
-    transform: translate(100px,120px); 
-}
-#userimg{
-    height: 50px;
-    width: 30px;
-    transform: translate(20px,0px); 
-}
-#usertxt{
-    height: 500px;
-    width: 300px;
-    transform: translate(60px,-50px);  
-}
+        <div id="right">
+            <div id="search">
+                <input type="search" id="SearchTab" placeholder="Search Twitter">
+                <img src="search.svg" id="searchimg">
+            </div>
 
-#Morebutton{
-    height: 50px;
-    width: 300px;
-  
-    border-radius: 100px;
-    transform: translate(100px,140px);
-}
-#moreimg{
-    height: 50px;
-    width: 30px;
-    transform: translate(20px,0px); 
-}
-#moretxt{
-    height: 500px;
-    width: 300px;
-    transform: translate(60px,-50px);   
-}
+            <div id="trendbox">
+                <h2 id="righttext">What's Happening?</h2>
 
-#TweetButton{
-    height: 50px;
-    width: 200px;
-    border: 1px solid white;
-    border-radius: 100px;
-    transform: translate(100px,160px);
-    background-color: rgb(29, 155, 240);
-    text-decoration: white;
-}
+                <div id="trend1">
+                    <h2 id="trend1text">#india</h2>
+                    <p id="trend1tweet">5MTweets</p>
+                    <p id="trendingin">Trending in india</p>
+                    <img src="menu-dots.svg" id="rightmore">
+                </div>
 
- /* CENTER part starts here  */
-#centerhometxt{
-    height: 20px;
-    width: 20px;
-transform: translate(20px,10px);
-}
-#centerprofileimg{
-    height: 50px;
-    width: 30px;
-    transform: translate(30px,20px); 
-}
-#centertextbox{
-    height: 50px;
-    width: 500px;
-    transform: translate(50px,0px);
-    font-size: large;
-}
-#centertweetbutton{
-    height: 50px;
-    width: 100px;
-    border: 1px solid white;
-    border-radius: 100px;
-    transform: translate(150px,100px);
-    background-color: rgb(29, 155, 240);
-    text-decoration: white;
-}
+                <div id="trend2">
+                    <h2 id="trend1text">#india</h2>
+                    <p id="trend1tweet">5MTweets</p>
+                    <p id="trendingin">Trending in india</p>
+                    <img src="menu-dots.svg" id="rightmore">
+                </div>
 
-/* RIGHT part starts here */
+                <div id="trend3">
+                    <h2 id="trend1text">#india</h2>
+                    <p id="trend1tweet">5MTweets</p>
+                    <p id="trendingin">Trending in india</p>
+                    <img src="menu-dots.svg" id="rightmore">
+                </div>
 
-#search{
-    transform: translate(0px,0px);
-}
+                <div id="trend4">
+                    <h2 id="trend1text">#india</h2>
+                    <p id="trend1tweet">5MTweets</p>
+                    <p id="trendingin">Trending in india</p>
+                    <img src="menu-dots.svg" id="rightmore">
+                </div>
 
-#SearchTab{
-height: 50px;
-width: 400px;
-border: 1px solid grey;
-border-radius: 100px;
-transform: translate(20px,0px);
-text-align: center;
-}
-#searchimg{
-    height: 50px;
-    width: 30px;
-    transform: translate(-350px,20px);
-}
+                <div id="trend5">
+                    <h2 id="trend1text">#india</h2>
+                    <p id="trend1tweet">5MTweets</p>
+                    <p id="trendingin">Trending in india</p>
+                    <img src="menu-dots.svg" id="rightmore">
+                </div>
 
-#trendbox{
-    height: 600px;
-    width: 400px;
-    border: 1px solid grey;
-    border-radius: 50px;
-    transform: translate(30px,30px);
-}
-#righttext{
-    transform: translate(20px,0px);
-}
-#trend1{
-    height: 80px;
-    width: 400px;
-    border: 1px solid black;
-}
-#trend1text{
-    height: 20px;
-    width: 20px;
-    transform: translate(20px,2px);
-}
-#trend1tweet{
-    height: 10px;
-    width: 10px;
-    transform: translate(20px,-5px);
- 
-}
-#trendingin{
-    height: 10px;
-    width: 150px;
-    transform: translate(20px,-85px);
-}
+                <div id="trend6">
+                    <h2 id="trend1text">#india</h2>
+                    <p id="trend1tweet">5MTweets</p>
+                    <p id="trendingin">Trending in india</p>
+                    <img src="menu-dots.svg" id="rightmore">
+                </div>
 
-#trend2{
-    height: 80px;
-    width: 400px;
-    border: 1px solid black;
-}
-#rightmore{
-    height: 50px;
-    width: 30px;
-    transform: translate(350px,-100px);
-}
-#trend3{
-    height: 80px;
-    width: 400px;
-    border: 1px solid black;
-}
-#trend4{
-    height: 80px;
-    width: 400px;
-    border: 1px solid black;
-}
-#trend5{
-    height: 80px;
-    width: 400px;
-    border: 1px solid black;
-}
-#trend6{
-    height: 80px;
-    width: 400px;
-    border: 1px solid black;
-}
-        </style>
-    </head>
-    <body>
-<div id="main">
 
-    <!--LEFT part starts here  -->
-    <div id="left">
-
-<div id="tweetlogo">
-    <img src="twitterlogo.svg" id="tweetimg">
-</div>
-
-<div id="homebutton">
-<img src="home.svg" id="homeimg">
-<p id="Hometxt">Home</p>
-</div>
-
-<div id="Explorebutton">
-<img src="star.svg" id="starimg">
-<p id="exploretxt">Explore</p>
-</div>
-
-<div id="Notificationbutton">
-<img src="bell.svg" id="bellimg">
-<p id="notificationtxt">Notification</p>
-</div>
-
-<div id="Messagesbutton">
-<img src="envelope.svg" id="messageimg">
-<p id="messagetxt">Message</p>
-</div>
-
-<div id="Bookmarkbutton">
-<img src="bookmark.svg" id="bookmarkimg">
-<p id="bookmarktxt">Bookmark</p>
-</div>
-
-<div id="Listbutton">
-<img src="list.svg" id="listimg">
-<p id="listtxt">List</p>
-</div>
-
-<div id="Profilebutton">
-<img src="user.svg" id="userimg">
-<p id="usertxt">User</p>
-</div>
-
-<div id="Morebutton">
-<img src="menu-dots.svg" id="moreimg">
-<p id="moretxt">More</p>
-</div>
-
-<button id="TweetButton">Tweet</button>
+            </div>
+        </div>
 
     </div>
-<!-- CENTER part starts here -->
-    <div id="center">
-<div>
-<h2 id="centerhometxt">Home</h2>
-
-</div>
-<img src="user.svg" id="centerprofileimg">
-<input type="text" id="centertextbox" placeholder="What's Happening?">
-<button id="centertweetbutton">Tweet</button>
-    </div>
-
-    <!-- RIGHT part starts here -->
-
-    <div id="right">
-<div id="search">
-    <input type="search" id="SearchTab" placeholder="Search Twitter">
-    <img src="search.svg" id="searchimg">
-</div>
-
-<div id="trendbox">
-<h2 id="righttext">What's Happening?</h2>
-
-<div id="trend1">
-<h2 id="trend1text">#india</h2>
-<p id="trend1tweet">5MTweets</p>
-<p id="trendingin">Trending in india</p>
-<img src="menu-dots.svg" id="rightmore">
-</div>
-
-<div id="trend2">
-    <h2 id="trend1text">#india</h2>
-    <p id="trend1tweet">5MTweets</p>
-    <p id="trendingin">Trending in india</p>
-    <img src="menu-dots.svg" id="rightmore">
-</div>
-
-<div id="trend3">
-    <h2 id="trend1text">#india</h2>
-    <p id="trend1tweet">5MTweets</p>
-    <p id="trendingin">Trending in india</p>
-    <img src="menu-dots.svg" id="rightmore">
-</div>
-
-<div id="trend4">
-    <h2 id="trend1text">#india</h2>
-    <p id="trend1tweet">5MTweets</p>
-    <p id="trendingin">Trending in india</p>
-    <img src="menu-dots.svg" id="rightmore">
-</div>
-
-<div id="trend5">
-    <h2 id="trend1text">#india</h2>
-    <p id="trend1tweet">5MTweets</p>
-    <p id="trendingin">Trending in india</p>
-    <img src="menu-dots.svg" id="rightmore">
-</div>
-
-<div id="trend6">
-    <h2 id="trend1text">#india</h2>
-    <p id="trend1tweet">5MTweets</p>
-    <p id="trendingin">Trending in india</p>
-    <img src="menu-dots.svg" id="rightmore">
-</div>
-
-
-</div>
-    </div>
-
-</div>
 
 
 
-    </body>
+</body>
+
 </html>
